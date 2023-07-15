@@ -1,0 +1,22 @@
+{
+  "name": "neo-ui-kit",
+  "version": "0.1.0",
+  "description": "",
+  "author": "Rustam Holiev",
+  "url": "t.me/@wemmbley",
+  "license": "MIT License",
+  "keywords": [],
+  "devDependencies": {
+    "@babel/preset-env": "^7.22.9",
+    "gulp": "*"
+  },
+  "dependencies": {
+    "@babel/core": "^7.22.9",
+    "browser-sync": "^2.29.3",
+    "gulp-babel": "^8.0.0",
+    "gulp-browserify": "^0.5.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.63.6"
+  }
+}

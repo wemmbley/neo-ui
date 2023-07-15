@@ -1,0 +1,120 @@
+//
+// Max-height and widths.
+//
+@for $i from 1 through 10 {
+    .mmh-#{$i}00 {
+        max-height: #{$i}00px; // 100, 200, 300...
+    }
+    .mmh-#{$i}50 {
+        max-height: #{$i}50px; // 150, 250, 350...
+    }
+    .mh-#{$i}00 {
+        min-height: #{$i}00px;
+    }
+    .mh-#{$i}00 {
+        min-height: #{$i}50px;
+    }
+
+    .mmw-#{$i}00 {
+        max-width: #{$i}00px;
+    }
+    .mmw-#{$i}50 {
+        max-width: #{$i}50px;
+    }
+    .mw-#{$i}00 {
+        min-width: #{$i}00px;
+    }
+    .mw-#{$i}50 {
+        min-width: #{$i}50px;
+    }
+}
+.w-auto {
+    width: auto;
+}
+.w-100-percents {
+    width: 100%;
+}
+.h-auto {
+    height: auto;
+}
+.h-100-percents {
+    height: 100%;
+}
+
+//
+// Margins and paddings.
+//
+@for $i from 1 through 50 {
+    .pb-#{$i} {
+        padding-bottom: #{$i}px;
+    }
+    .pt-#{$i} {
+        padding-top: #{$i}px;
+    }
+    .pl-#{$i} {
+        padding-left: #{$i}px;
+    }
+    .pr-#{$i} {
+        padding-right: #{$i}px;
+    }
+
+    .mb-#{$i} {
+        margin-bottom: #{$i}px;
+    }
+    .mt-#{$i} {
+        margin-top: #{$i}px;
+    }
+    .ml-#{$i} {
+        margin-left: #{$i}px;
+    }
+    .mr-#{$i} {
+        margin-right: #{$i}px;
+    }
+}
+
+//
+// Flex shortcuts.
+//
+.d-flex {
+    display: flex;
+}
+.vertical-center-flex {
+    justify-content: center;
+}
+.vertical-between-flex {
+    justify-content: space-between;
+}
+.vertical-around-flex {
+    justify-content: space-around;
+}
+.horizontal-center-flex {
+    align-items: center;
+}
+
+//
+// Grid shortcuts.
+//
+.d-grid {
+    display: grid;
+}
+
+//
+// Other and etc.
+//
+.vertical-center {
+    margin: 0 auto;
+}
+.hide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+.bubble {
+    cursor: pointer;
+    transition: transform .4s ease;
+    &:hover {
+        transform: translate3D(0,-1px,0) scale(1.02);
+        transition: transform .4s ease;
+    }
+}

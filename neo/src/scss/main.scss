@@ -1,0 +1,46 @@
+@import "./fonts/museo.css";
+
+@import "main/variables";
+@import "main/mixins";
+@import "main/grid";
+@import "main/reset";
+@import "main/aliases";
+@import "ui/card";
+@import "ui/buttons";
+
+body {
+    background-color: $colorBody;
+    font-family: Museo, sans-serif;
+    color: $colorDark;
+}
+h2 {
+    font-size: 26px;
+    line-height: 28px;
+    font-weight: 600;
+    color: $colorDark;
+}
+h3 {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 600;
+}
+p {
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: normal;
+    text-align: left;
+    color: $colorDark;
+}
+a {
+    color: $colorDark;
+    text-decoration: none;
+    :hover {
+        color: $colorBlue;
+    }
+}
+time {
+    display: flex;
+    color: $colorDark;
+    font-weight: 300;
+    margin-bottom: 5px;
+}

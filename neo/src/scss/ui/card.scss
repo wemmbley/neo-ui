@@ -1,0 +1,11 @@
+.card {
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 16px 24px 8px #8080800d;
+    overflow: hidden;
+    display: block;
+    background: $colorWhite;
+    position: relative;
+    border: none transparent;
+    overflow: clip;
+}

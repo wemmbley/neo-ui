@@ -1,0 +1,18 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: $colorBlue;
+  border-color: transparent;
+  min-height: 46px;
+  cursor: pointer;
+  transition: .2s background-color,.2s color,.2s border-color;
+
+    font-weight: 700;
+    color: $colorWhite;
+
+  &:hover {
+    background-color: $colorBlueLight;
+  }
+}
