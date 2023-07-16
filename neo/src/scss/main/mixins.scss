@@ -1,3 +1,6 @@
 @mixin toRem($property, $value) {
   #{$property}: ($value / 16) + rem;
 }
+@mixin transition() {
+  transition: .2s background-color,.2s color,.2s border-color;
+}

@@ -7,12 +7,11 @@
   border-color: transparent;
   min-height: 46px;
   cursor: pointer;
-  transition: .2s background-color,.2s color,.2s border-color;
-
-    font-weight: 700;
-    color: $colorWhite;
-
+  font-weight: 700;
+  color: $colorWhite;
+  @include transition;
   &:hover {
+    @include transition;
     background-color: $colorBlueLight;
   }
 }

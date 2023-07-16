@@ -57,6 +57,9 @@
     .pr-#{$i} {
         padding-right: #{$i}px;
     }
+    .pp-#{$i} {
+        padding: #{$i}px;
+    }
 
     .mb-#{$i} {
         margin-bottom: #{$i}px;
@@ -69,6 +72,9 @@
     }
     .mr-#{$i} {
         margin-right: #{$i}px;
+    }
+    .mm-#{$i} {
+        margin: #{$i}px;
     }
 }
 

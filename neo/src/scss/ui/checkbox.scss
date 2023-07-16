@@ -1,0 +1,12 @@
+input[type=checkbox] {
+  border: solid 1px $colorWhiteDark;
+  border-radius: 5px;
+  width: 20px;
+  height: 20px;
+  @include transition;
+  &:hover {
+    border: solid 1px #aaafbf;
+    box-shadow: 0 1px 4px #0003;
+    @include transition;
+  }
+}
