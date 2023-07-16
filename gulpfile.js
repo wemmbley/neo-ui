@@ -9,8 +9,8 @@ const connectPHP = require('gulp-connect-php');
 const request = require('request');
 
 const PHP_HOST = '127.0.0.1';
-const PHP_PORT = 8008;
-const PHP_SERVER_URL = PHP_HOST + ':' + PHP_PORT + '/';
+const PHP_PORT = 8009;
+const PHP_SERVER_URL = 'http://' + PHP_HOST + ':' + PHP_PORT + '/';
 
 gulp.task('serve', function() {
     browserSync.init({
@@ -37,11 +37,7 @@ gulp.task('serve', function() {
         .on('change', gulp.series('compile'));
 });
 gulp.task('compile', function() {
-    request.get(PHP_SERVER_URL + '?action=compile');
-
-    return gulp.src('neo/src/html/**/*.html')
-        .pipe(browserSync.stream())
-        .pipe(gulp.dest('./neo/dist/'));
+    request.get(PHP_SERVER_URL + '?action=compile')
 });
 gulp.task('sass', function() {
     return gulp.src('./neo/src/scss/main.scss')
@@ -60,6 +56,9 @@ gulp.task('copyFonts', () => {
     return gulp.src('./neo/src/fonts/**/*.*')
         .pipe(gulp.dest('./neo/dist/fonts'));
 });
+gulp.task('finish', () => {
+    connectPHP.closeServer();
+    process.exit();
+});
 
-
-gulp.task('default', gulp.series('serve', 'sass', 'copyFonts'));
+gulp.task('default', gulp.series('serve', 'sass', 'copyFonts', 'finish'));
