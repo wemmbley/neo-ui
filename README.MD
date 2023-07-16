@@ -1,4 +1,12 @@
 # NEO UI Kit
+A new word in adaptive practices! Just look at this magic yourself!
+
+### Modern design
+<img src="neo/src/img/git/blog.png">
+
+### Beautiful adaptive without CSS
+<img src="neo/src/img/git/code.png">
+
 ## CLI Commands
 `gulp serve` - run develop mode.
 

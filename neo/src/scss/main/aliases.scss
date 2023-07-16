@@ -78,6 +78,12 @@
 .d-flex {
     display: flex;
 }
+.column-flex {
+    flex-direction: column;
+}
+.row-flex {
+    flex-direction: row;
+}
 .vertical-center-flex {
     justify-content: center;
 }
