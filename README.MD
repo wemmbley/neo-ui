@@ -1,5 +1,9 @@
 # NEO UI Kit
-A new word in adaptive practices! Just look at this magic yourself!
+A new word in adaptive practices! Just look at this magic yourself! <br>
+(Attention: install and use PHP 8.2 in your system for properly compiler work!)
+
+# Benefits
+<br>
 
 ### Modern design
 <img src="neo/src/img/git/blog.png">
@@ -7,15 +11,31 @@ A new word in adaptive practices! Just look at this magic yourself!
 ### Beautiful adaptive without CSS
 <img src="neo/src/img/git/code.png">
 
+### PHP Compiler
+Do you know PHP? If yes, you can easily tweak the templating engine to your needs <br>
+by making a fork of the project, and even contributing to this official repository to improve the framework!
+
+### Low entry threshold
+You don't need to know complex modern frameworks at all to utilize <br>
+the full power of this framework! You will only need to know HTML and our delightful templating engine! <br><br>
+For businesses, this means massive savings on hiring new employees <br>
+and supporting existing projects written on this marvelous framework.
+
+### Ready-made classes and components
+You don't need to write your own UI-kit now, because our wonderful framework provide this possibility built-in! <br>
+You also don't need to know JS-language, - it's enough to use components built into the framework, <br>
+such as slider for example. Wonderful, isn't it?
+
 ## CLI Commands
 `gulp serve` - run develop mode.
 
-# Framework
+# Framework concepts
+<br>
+
 ## Architecture
 All framework files is contained in `neo/` folder. <br>
 Here you can find built framework in `dist/` folder, and source file in `src/` folder. <br>
 
-# Framework in-use
 ## Margins, paddings...
 `.ml-5` is equal to `margin-left: 5px;` <br>
 `.pb-49` is equal to `padding-bottom: 49px;` <br>
@@ -32,7 +52,7 @@ Other examples:<br>
 `.h-100-percents` equals `height: 100%;` <br>
 
 ## Maybe grid like Bootstrap?
-Isn't! You can include it massive framework, but in Neo we use default CSS Grid System or Flexbox.
+Isn't! You can include it massive framework, but in Neo we use default CSS Grid System or Flexbox. <br>
 
 ### Flex
 `.d-flex` is equal to `display: flex;` <br>
