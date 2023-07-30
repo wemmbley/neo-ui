@@ -1,0 +1,22 @@
+input[type="text"] {
+  height: 40px;
+  border: solid 1px $colorWhiteDark;
+  border-radius: 5px;
+  color: #555;
+  padding: 11px 10px 10px;
+  line-height: 23px;
+  background-color: $colorWhite;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  @include transition;
+  &:focus {
+    border-color: $colorBlue;
+    outline: 0 none;
+  }
+  &:hover {
+    border: solid 1px #aaafbf;
+    box-shadow: 0 1px 4px #0003;
+    @include transition;
+  }
+}

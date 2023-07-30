@@ -140,18 +140,11 @@ function parseStylesheetPathsFromTemplate(string &$htmlTemplate): array
         $stylesheetPathLink = $matches[1];
         $neoRelativePath = 'neo';
 
-        // Exit loop, if we got a style from another folder that "neo/".
-        // Maybe I'm add in future something like config for these issues.
-        if (!str_contains($stylesheetPathLink, $neoRelativePath)) {
-            return;
-        }
-
         $stylesheetRelativePath = str_replace($neoRelativePath, '', $stylesheetPathLink);
-        $stylesheetFullPath = ROOT . $stylesheetRelativePath;
 
-        $resultStylesheetPaths[] = $stylesheetFullPath;
+        $resultStylesheetPaths[] = $stylesheetRelativePath;
 
-        return "<link rel=\"stylesheet\" href=\"{$stylesheetFullPath}\"";
+        return "<link rel=\"stylesheet\" href=\"{$stylesheetRelativePath}\"";
     }, $htmlTemplate);
 
     return $resultStylesheetPaths;
